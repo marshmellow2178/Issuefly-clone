@@ -1,0 +1,21 @@
+@import url(common.css);
+
+.textarea{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    margin: 30px auto;
+}
+
+.big-list{
+    padding: 30px;
+}
+.big-list li{
+    font-size: 24px;
+    list-style-type: decimal;
+    padding: 5px;
+}
+
+.small-list li{
+    list-style-type:decimal;
+    font-size: 16px;
+}

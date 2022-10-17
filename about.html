@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="css/about.css">
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <a class=logo href="index.html"><img src="img/cropped-logo.png" alt="logo"></a>           
+            <button class="openmenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <a href="index.html">Home</a>
+                <a class="accent" href="about.html">About</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacts.html">Contacts</a>
+            </nav>
+        </div>
+
+        <script>
+            const nav = document.querySelector('nav');
+            const triggerMenu = document.querySelector('.openmenu');
+            triggerMenu.onclick = function () {
+                nav.classList.toggle('active');
+            }
+        </script>
+    </header>
+    <main>
+        <div class="banner">
+            <section>
+                <h2>About</h2>
+            </section>
+        </div>
+        <div class="wrapper">
+            <section class="team">
+                <h2>Meet the core team members</h2>
+                <ul>
+                    <li>
+                        <p class="img"><img src="img/team/Adam-Pogorzelski.jpg" alt="ceo"></p>
+                        <b>Adam Pogorzelski</b>
+                        <p>Founder, CEO</p>
+                    </li>
+                    <li>
+                        <p class="img"><img src="img/team/Lucas-Korol-e1654252104871.jpg" alt="cto"></p>
+                        <b>Lucas Korol</b>
+                        <p>Founder, CTO</p>
+                    </li>
+                    <li>
+                        <p class="img"><img src="img/team/Adam-Walewski-e1654252165655.jpg" alt="coo"></p>
+                        <b>Adam Walewski</b>
+                        <p>Founder, COO</p>
+                    </li>
+                    <li>
+                        <p class="img"><img src="img/team/Martin-Rozanski-e1654253406494.jpg" alt="cfo"></p>
+                        <b>Martin Rozanski</b>
+                        <p>Founder, CFO</p>
+                    </li>
+                    <li>
+                        <p class="img"><img src="img/team/Olga-Pogorzelska-e1654253259775.jpg" alt="cco"></p>
+                        <b>Olga Pogorzelska</b>
+                        <p>Founder, CCO</p>
+                    </li>
+                    <li>
+                        <p class="img"><img src="img/team/Agnes-Kopiczko-e1654253351171.jpg" alt="support"></p>
+                        <b>Agnes Kopiczko</b>
+                        <p>Customer Support</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="info">
+                <ul>
+                    <li>
+                        <p>IssueFly LLC,
+                            1 22D Innovation Street,
+                            16-400, Suwalki, Poland</p>
+                    </li>
+                    <li>
+                        <p>We’re here to help in any way we can.
+                            Submit your request at <b>support@issuefly.com</b> and we’ll get
+                            back to you shortly.</p>
+                    </li>
+                    <li>
+                        <p>Ph. + 48 605 383 670
+                            Working hours:
+                            Mon – Fri, 8am-4pm CET
+                        </p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <span class="cookie">cookie settings</span>
+        <div class="cookietext">
+            <p>We use cookies to ensure you get the best experience on 
+                our website. If you need more information about our 
+                rules, read our <a href=privacypolicy.html>Privacy Policy</a></p>
+            <button type="button">Got it</button>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <a class=accent href="about.html">About</a>
+            <a href="privacypolicy.html">PP</a>
+            <a href="terms-of-service.html">Tos</a>
+        </nav>
+        <p>© Copyright 2022 IssueFly. All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>

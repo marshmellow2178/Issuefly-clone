@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <a class=logo href="index.html"><img src="img/cropped-logo.png" alt="logo"></a>           
+            <button class="openmenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <a class=accent href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacts.html">Contacts</a>
+            </nav>
+        </div>
+
+        <script>
+            const nav = document.querySelector('nav');
+            const triggerMenu = document.querySelector('.openmenu');
+            triggerMenu.onclick = function () {
+                nav.classList.toggle('active');
+            }
+        </script>
+    </header>
+
+    <main>
+
+        <div class="banner">
+            <div>
+                <h2>Work Better With Your Clients</h2>
+                <p>Simple app for you and your client to work on issues.</p>
+            </div>
+        </div>
+
+        <section class="product">
+            <h2></h2>
+            <div class="wrapper">
+                <div class="img">
+                    <img src="img/screen.png" alt="screen">
+                </div>
+                <div class="textarea">
+                    <b>PRODUCT</b>
+                    <h2>What's IssueFly?</h2>
+                    <p>The IssueFly is the world’s simplest online issue tracking app to organize
+                        communication in business projects between you and your client.</p>
+                    <ul>
+                        <li>
+                            <p>IssueFly is a simple tool that creates a temporary space of
+                                communication in projects - between you and your client. Because of
+                                its simplicity no more time-consuming trainings of people to enable
+                                them to use the application. Send an invite and have a happy
+                                IssueFlying.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Tablet – IPad repair
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="button-accent">
+                        <a href="about.html">MORE ABOUT</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="why">
+            <h2></h2>
+            <div class="wrapper">
+                <div class="textarea">
+                    <h2>Why Choose Us?</h2>
+                    <ul>
+                        <li>
+                            <div class="list">
+                                <b>Best Tracking</b>
+                                <p>We provides one of the best online issue tracking app.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list">
+                                <b>Low Price</b>
+                                <p>We have one of the lowest prices in industry,</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list">
+                                <b>Free Version</b>
+                                <p>We provides free version of our app for test or individual using.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="img">
+                    <img src="img/why-choose-us.jpg" alt="why choose us">
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing">
+            <h2>Pricing</h2>
+            <div class="wrapper">
+                <article class="pricetag">
+                    <b>For individual Usage</b>
+                    <h3>Free</h3>
+                    <ul>
+                        <li>Unlimited number of projects</li>
+                        <li>Unlimited number of users</li>
+                        <li>Max 2 participants in project</li>
+                        <li>1 GB storage limit</li>
+                    </ul>
+                    <div class="button">
+                        <a href="contacts.html">Contact To Choose Plan</a>
+                    </div>
+                </article>
+
+                <article class="pricetag">
+                    <b>For Buisness</b>
+                    <h3>$29/month</h3>
+                    <ul>
+                        <li>Unlimited number of projects</li>
+                        <li>Unlimited number of users</li>
+                        <li>Unlimited participants in project</li>
+                        <li>10 GB storage limit</li>
+                    </ul>
+
+                    <div class="button-accent">
+                        <a href="contacts.html">Contact With Sale Team</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <span class="cookie">cookie settings</span>
+        <div class="cookietext">
+            <p>We use cookies to ensure you get the best experience on
+                our website. If you need more information about our
+                rules, read our <a href=privacypolicy.html>Privacy Policy</a></p>
+            <button type="button">Got it</button>
+        </div>
+
+    </main>
+    <footer>
+        <nav>
+            <a href="about.html">About</a>
+            <a href="privacypolicy.html">PP</a>
+            <a href="terms-of-service.html">Tos</a>
+        </nav>
+        <p>© Copyright 2022 IssueFly. All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>

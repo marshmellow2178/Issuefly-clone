@@ -1,0 +1,61 @@
+@import url(common.css);
+.wrapper{display: flex;}
+.contact, fieldset{width: 50%;}
+.contact{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact div{
+    text-align: left;
+}
+.contact div ul{
+    padding-left: 30px;
+}
+.contact div ul li{
+    list-style-type: disc;
+}
+
+fieldset{
+    border: none;
+    padding: 50px 20px;
+}
+fieldset label{
+    display: block;
+    font-weight: bolder;
+}
+fieldset label span{ color: red;}
+fieldset ul li{
+    margin-bottom: 20px;
+}
+
+fieldset ul li span{
+    width: 120px;
+    display: inline-block;
+}
+fieldset ul li span input{
+    width: 100%;
+}
+fieldset ul li span label{
+    font-size: 13px;
+    font-weight: 300;
+}
+fieldset ul li input, textarea{
+    font-size: 20px;
+    border: 1px solid lightgray;
+}
+
+fieldset ul li:nth-of-type(3) textarea{ width: 100%;}
+fieldset ul li:nth-of-type(4) input{
+    display: inline-block;
+    width: 80px; height: 40px;
+    padding: 10px 15px;
+    text-align: center;
+    padding: 5px;
+    font-size: 16px;
+}
+
+@media (max-width: 767px){
+    .wrapper{flex-direction: column;}
+    .contact{width: 100%;}
+}

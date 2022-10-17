@@ -1,0 +1,202 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+html,
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    line-height: 150%;
+}
+
+ul,
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    vertical-align: top;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 100vw;
+}
+header .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+header nav {
+    justify-content: space-evenly;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+header nav a {
+    padding: 0 11px;
+    color: black;
+}
+header nav a:hover, header nav .accent{color: #328ec8;}
+
+header .logo {
+    padding: 25px 35px 16px 0;
+}
+
+header .openmenu {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    background: none;
+    border: none;
+    display: none;
+}
+
+header .openmenu span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+}
+header .openmenu span:nth-of-type(1){top: 10%;}
+header .openmenu span:nth-of-type(2){top: 50%;}
+header .openmenu span:nth-of-type(3){top: 90%;}
+header .openmenu:hover span{background-color: #328ec8;}
+
+.banner {
+    background-color: black;
+    height: 320px;
+    display: flex;
+    align-items: center;
+}
+.banner section{
+    width: 1200px;
+    margin: 0px auto;
+    padding: 0px 30px;
+    text-align: left;
+}
+.banner h2 {
+    color: white;
+    font-size: 45px;
+    font-family: 'Anton', sans-serif;
+}
+.wrapper{
+    width: 100vw;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0px 30px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+footer nav {
+    padding: 60px 0 20px;
+}
+
+footer nav a {
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+footer nav .accent {
+    color: #328ec8;
+}
+
+footer p {
+    padding: 40px 0;
+}
+
+.cookie{
+    position: fixed;
+    width: 128px; 
+    right: 3%; bottom: -30px;
+    background-color: #937afc;
+    text-align: center;
+    padding: 8px;
+    border-radius: 10px;
+    transition: 1s;
+    color: white;
+    font-size: 16px;
+    text-decoration: underline;
+}
+.cookie:hover{
+    bottom: 0;
+}
+
+.cookietext{
+    position: fixed;
+    right: 10px; bottom: 10px;
+    background-color: #937afc;
+    color: white;
+    font-size: 16px;
+    width: 380px;
+    padding: 30px;
+    display: none;
+}
+.cookietext a{
+    color: white;
+    text-decoration: underline;
+}
+.cookietext button{
+    width: 100%;
+    margin-top: 30px;
+    border: none;
+    background-color: white;
+    color:#937afc;
+    padding: 10px 0;
+}
+
+@media(max-width: 1023px){
+    header .openmenu { 
+        display: block; 
+    }
+    header nav{
+        width: 100%;
+        flex-direction: column;
+        background: white;
+        display: none;
+    }
+    header nav a{margin: 5px;}
+    header nav.active{ display: flex; }
+}
+
+@media (max-width: 767px) {
+    header .wrapper{
+        flex-direction: column;
+        padding: 0 10px;
+    }
+    header nav{top:160px;}
+    header nav a{margin: 5px;}
+}

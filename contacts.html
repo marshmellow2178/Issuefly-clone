@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="css/contacts.css">
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <a class=logo href="home.html"><img src="img/cropped-logo.png" alt="logo"></a>
+            <button class="openmenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="blog.html">Blog</a>
+                <a class=accent href="contacts.html">Contacts</a>
+            </nav>
+        </div>
+        <script>
+            const nav = document.querySelector('nav');
+            const triggerMenu = document.querySelector('.openmenu');
+            triggerMenu.onclick = function () {
+                nav.classList.toggle('active');
+            }
+        </script>
+    </header>
+
+    <main>
+        <div class="banner">
+            <section>
+                <h2>Contacts</h2>
+            </section>
+        </div>
+
+        <div class="wrapper">
+            <div class="contact">
+                <div>
+                    <p>Contact for any questions.</p>
+                    <ul>
+                        <li>Suwalki, Podlaskie, Poland</li>
+                        <li>support@issuefly.com</li>
+                        <li>+48 69 928 7326</li>
+                    </ul>
+                </div>
+            </div>
+            <fieldset>
+                <form>
+                    <ul>
+                        <li>
+                            <label for="username">Name<span>*</span></label>
+                            <span>
+                                <input type="text" id="username">
+                                <label>First</label>
+                            </span>
+                            <span>
+                                <input type="text" id="username">
+                                <label>Last</label>
+                            </span>
+                        </li>
+                        <li>
+                            <label for="mail">Email<span>*</span></label>
+                            <input type="email" id="mail">
+                        </li>
+                        <li>
+                            <label for="message">Comment or Message<span>*</span></label>
+                            <textarea cols="40" rows="4"></textarea>
+                        </li>
+                        <li>
+                            <input type="submit" value="Submit">
+                        </li>
+                    </ul>
+                </form>
+            </fieldset>
+        </div>
+        <span class="cookie">cookie settings</span>
+        <div class="cookietext">
+            <p>We use cookies to ensure you get the best experience on
+                our website. If you need more information about our
+                rules, read our <a href=privacypolicy.html>Privacy Policy</a></p>
+            <button type="button">Got it</button>
+        </div>
+    </main>
+
+    <footer>
+        <nav>
+            <a href="about.html">About</a>
+            <a href="privacypolicy.html">PP</a>
+            <a href="terms-of-service.html">Tos</a>
+        </nav>
+        <p>© Copyright 2022 IssueFly. All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service</title>
+    <link rel="stylesheet" href="css/terms-of-service.css">
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <a class=logo href="index.html"><img src="img/cropped-logo.png" alt="logo"></a>
+            <button class="openmenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacts.html">Contacts</a>
+            </nav>
+        </div>
+        <script>
+            const nav = document.querySelector('nav');
+            const triggerMenu = document.querySelector('.openmenu');
+            triggerMenu.onclick = function () {
+                nav.classList.toggle('active');
+            }
+        </script>
+    </header>
+    <main>
+        <div class="banner">
+            <section>
+                <h2>Terms of Service</h2>
+            </section>
+        </div>
+
+        <div class="wrapper">
+            <div class="textarea">
+                <p>
+                    By using the IssueFly.com web site (“Service”), or any Services of IssueFly Sp. z o.o.
+                    a Polish company with business address at Innowacyjna Street No 1/22D, 16-400 Suwalki, Poland,
+                    entered into commercial register of the Polish Court Register held by the District Court
+                    Bialystok in Bialystok No 0000543482, with share capital of 5,000.00 PLN,
+                    TAX ID NO: PL8442352987 (“IssueFly” or “we” or “our” or “us”), you agree to be bound by the
+                    following terms and conditions (“Terms of Service”).
+                </p>
+                <p>
+                    IssueFly Sp. z o.o. reserves the right to update and change the Terms of Service from
+                    time to time without notice. Any new features that augment or enhance the current Service,
+                    including the release of new tools and resources, shall be subject to the Terms of Service.
+                    Continued use of the Service after any such changes shall constitute your consent to such
+                    changes. You can review the most current version of the Terms of Service at any time
+                    at: <a href="terms-of-service.html">www.issuefly.com/terms</a>
+                </p>
+            </div>
+            <ul class="big-list">
+                <li>
+                    BILLING TERMS
+                    <ol class="small-list">
+                        <li>
+                            A valid credit card is required for paid accounts but it is not required for free accounts.
+                        </li>
+                        <li>
+                            IssueFly accepts payment via credit card. All credit card payments are processed by our
+                            third party payment provider, which is PayLane Sp. z o.o. a Polish company with business
+                            address at Arkonska Street No 6/A3, 80 – 387 Gdansk, Poland, entered into commercial
+                            register
+                            of the Polish Court Register No 0000227278.
+                        </li>
+                        <li>
+                            The Service is billed in advance on a monthly or yearly pre-payment schedule that
+                            automatically charges Subscriber’s credit card. There will be no refunds or credits for
+                            partial months of Service, upgrade/downgrade refunds, or refunds for months unused with an
+                            open Account.
+                            In order to treat everyone equally, no exceptions will be made.
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    CANCELLATION AND TERMINATION
+                    <ol class="small-list">
+                        <li>
+                            You can cancel your Account at any time by sending an email request to support@issuefly.com
+                        </li>
+                        <li>
+                            All of your Content will be deleted from the Service upon cancellation.
+                            This information can not be recovered once your Account is cancelled.
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+        <span class="cookie">cookie settings</span>
+        <div class="cookietext">
+            <p>We use cookies to ensure you get the best experience on
+                our website. If you need more information about our
+                rules, read our <a href=privacypolicy.html>Privacy Policy</a></p>
+            <button type="button">Got it</button>
+        </div>
+    </main>
+
+    <footer>
+        <nav>
+            <a href="about.html">About</a>
+            <a href="privacypolicy.html">PP</a>
+            <a class=accent href="terms-of-service.html">Tos</a>
+        </nav>
+        <p>© Copyright 2022 IssueFly. All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+@import url(common.css);
+
+.team{
+    font-style: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+.team h2{
+    color: #6ec1e4;
+    font-size: 30px;
+    text-align: center;
+    padding: 50px 0;
+}
+.team ul li .img img{ width: 100%;}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+li{
+    padding: 10px 0;
+    width: 30%;
+}
+
+.info{
+    padding: 80px 0;
+}
+
+.info li{
+    white-space: pre-line;
+    text-align: left;
+}
+
+@media (max-width:767px){
+    ul{
+        flex-direction: column;
+    }
+    li{
+        width: 100%;
+    }
+}
