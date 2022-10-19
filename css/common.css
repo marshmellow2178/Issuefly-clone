@@ -177,6 +177,9 @@ footer p {
     color:#937afc;
     padding: 10px 0;
 }
+.cookietext.active{
+    display: block;
+}
 
 @media(max-width: 1023px){
     header .openmenu { 
