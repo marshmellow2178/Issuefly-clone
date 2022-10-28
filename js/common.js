@@ -1,45 +1,26 @@
 $('header').load('inc.html header > .wrapper', menu);
-$('footer').load('inc.html footer > nav, footer > p', fmenu);
+$('footer').load('inc.html footer > nav, footer > p', menu);
 $('.cookietext').load('inc.html .cookietext > p, .cookietext > button', cookieLoad);
 
-let index = localStorage.index;
-function menu() {
-    $('header nav > a').removeClass('active');
-    if (index != undefined) {
-        $('header nav > a').eq(index).addClass('active');
-    }
+let url = location.pathname.substring(1); 
 
-    $('header nav > a').on('click', function () {
-        localStorage.index = $(this).index();
-        if(index!=2){
-            localStorage.findex = undefined;
+function menu(){
+    $('nav > a').each(function(){
+        if($(this).attr('href')==url){
+            $(this).addClass('active');
         }
         else{
-            localStorage.findex = 0;
+            $(this).removeClass('active');
         }
+        console.log(url, $(this).attr('href'))
     });
 
     $('header .openmenu').on('click', function () {
+        $(this).hide();
         $('header nav').addClass('active');
-        console.log(1)
     });
-} 
+}
 
-let findex = localStorage.findex;
-function fmenu() {
-    $('footer nav > a').removeClass('active');
-    $('footer nav > a').eq(findex).addClass('active');
-    $('footer nav > a').on('click', function () {
-        localStorage.findex = $(this).index();
-        if(localStorage.findex !=0){
-            localStorage.index = undefined;
-        }
-        else{
-            localStorage.index = 1;
-        }
-    });
-} 
-  
 function cookieLoad(){
     const cookie = document.querySelector('.cookie');
     const cookieText = document.querySelector('.cookietext');
