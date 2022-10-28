@@ -61,7 +61,12 @@ header nav a {
     padding: 0 11px;
     color: black;
 }
-header nav a:hover, header nav .accent{color: #328ec8;}
+header nav a:hover{
+    color: #328ec8;
+}
+header nav a.active{
+    color: #328ec8;
+}
 
 header .logo {
     padding: 25px 35px 16px 0;
@@ -130,7 +135,10 @@ footer nav a {
     color: white;
 }
 
-footer nav .accent {
+footer nav a.active{
+    color: #328ec8;
+}
+footer nav a:hover{
     color: #328ec8;
 }
 
