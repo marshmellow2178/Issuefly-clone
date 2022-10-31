@@ -2,7 +2,7 @@ $('header').load('inc.html header > .wrapper', menu);
 $('footer').load('inc.html footer > nav, footer > p', menu);
 $('.cookietext').load('inc.html .cookietext > p, .cookietext > button', cookieLoad);
 
-let url = location.pathname.substring(1); 
+let url = location.pathname.split('/')[1]; 
 
 function menu(){
     $('nav > a').each(function(){
